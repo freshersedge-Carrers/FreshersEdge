@@ -83,13 +83,20 @@ function continuePayment() {
     let qr = "";
     let upi = "";
 
-    if (amount < 1000) {
+    if (amount <= 500) {
 
-        bank = "State Bank of India";
-        qr = "images/sbi.jpeg";
-        upi = "jayhelp@ybl";
+        bank = "canara";
+        qr = "images/canara.jpeg";
+        upi = "freshersedgee@ybl";
 
     }
+	else if (amount < 1000) {
+
+	       bank = "State Bank of India";
+	       qr = "images/sbi.jpeg";
+	       upi = "jayhelp@ybl";
+
+	   }
     else if (amount < 2000) {
 
         bank = "ICICI Bank";
