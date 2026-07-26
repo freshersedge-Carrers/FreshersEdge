@@ -100,7 +100,7 @@ function continuePayment() {
     else {
 
         bank = "APGB Bank";
-        qr = "images/apgb.jpeg";
+        qr = "images/apgp.jpeg";
         upi = "jayinter@ybl";
 
     }
