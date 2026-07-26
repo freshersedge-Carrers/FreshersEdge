@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Payment Portal | FreshersEdge</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold text-primary fs-3"
+href="index.html">
+
+<img src="images/logo.jpeg"
+width="45"
+class="me-2">
+
+FreshersEdge
+
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="exam.html">Exam</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="interview.html">Interview</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HEADER ================= -->
+
+<section class="py-5 bg-light">
+
+<div class="container text-center">
+
+<h1 class="fw-bold">
+
+Payment Portal
+
+</h1>
+
+<p class="text-muted">
+
+Complete your payment securely.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= PAYMENT FORM ================= -->
+
+<section class="pb-5">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="card shadow border-0 rounded-4">
+
+<div class="card-body p-5">
+
+<h3 class="mb-4">
+
+Customer Details
+
+</h3>
+
+<form id="paymentForm" onsubmit="return false;">
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Full Name
+
+</label>
+
+<input
+type="text"
+id="name"
+name="fullName"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Mobile Number
+
+</label>
+
+<input
+type="tel"
+id="mobile"
+name="mobile"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Email
+
+</label>
+
+<input
+type="email"
+id="email"
+name="email"
+class="form-control"
+required>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Selected Service
+
+</label>
+
+<select
+id="service"
+name="service"
+class="form-select"
+required>
+
+<option value="">Select Service</option>
+
+<option value="Exam Assistance">
+
+Exam Assistance
+
+</option>
+
+<option value="Interview Assistance">
+
+Interview Assistance
+
+</option>
+
+</select>
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<label class="form-label">
+
+Amount (₹)
+
+</label>
+
+<input
+type="number"
+id="amount"
+name="amount"
+class="form-control"
+placeholder="Enter Amount"
+required>
+
+</div>
+</div>
+
+<div class="mt-4 text-center">
+
+<button
+type="button"
+class="btn btn-primary btn-lg px-5"
+onclick="continuePayment()">
+
+Continue
+
+<i class="fa-solid fa-arrow-right ms-2"></i>
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-4">
+
+<h4>
+
+FreshersEdge
+
+</h4>
+
+<p>
+
+Exam & Interview Preparation Support for Freshers.
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>
+
+Quick Links
+
+</h4>
+
+<ul class="list-unstyled">
+
+<li>
+
+<a
+href="index.html"
+class="text-white text-decoration-none">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a
+href="exam.html"
+class="text-white text-decoration-none">
+
+Exam Assistance
+
+</a>
+
+</li>
+
+<li>
+
+<a
+href="interview.html"
+class="text-white text-decoration-none">
+
+Interview Assistance
+
+</a>
+
+</li>
+
+<li>
+
+<a
+href="contact.html"
+class="text-white text-decoration-none">
+
+Contact
+
+</a>
+
+</li>
+
+<li>
+
+<a
+href="payment.html"
+class="text-white text-decoration-none">
+
+Payment
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>
+
+Contact
+
+</h4>
+
+<p>
+
+📞 7448737205
+
+</p>
+
+<p>
+
+📧 freshersedge@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center mb-0">
+
+© 2026 FreshersEdge. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/payment.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
